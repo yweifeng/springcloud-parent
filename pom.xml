@@ -17,6 +17,8 @@
         <module>zuul-server</module>
         <module>config-server</module>
         <module>config-client</module>
+        <module>eureka-service-ribbon-zipken</module>
+        <module>eureka-service-ribbon-zipken-1</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

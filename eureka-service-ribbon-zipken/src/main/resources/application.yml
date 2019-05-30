@@ -1,0 +1,13 @@
+server:
+  port: 4001
+spring:
+  application:
+    name: service-zipken
+  zipkin:
+    base-url: http://localhost:9411
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true
