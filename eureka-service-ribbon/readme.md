@@ -39,13 +39,16 @@ ribbon+rest+hystrix+dashedHystrix
 添加断路器hystrix
 ===
 1、pom.xml添加依赖
+---
     <dependency>
         <groupId>com.netflix.hystrix</groupId>
         <artifactId>hystrix-javanica</artifactId>
         <version>RELEASE</version>
     </dependency>
 2、application添加注解@EnableHystrix
+---
 3、为添加熔断方法
+---
     @Service
     public class HelloService {
         @Autowired
@@ -63,6 +66,7 @@ ribbon+rest+hystrix+dashedHystrix
 添加断路器监控 hystrix-dashboard
 ===
 1、pom.xml添加依赖
+---
     <dependency>
         <groupId>com.netflix.hystrix</groupId>
         <artifactId>hystrix-javanica</artifactId>
@@ -73,6 +77,7 @@ ribbon+rest+hystrix+dashedHystrix
         <artifactId>spring-cloud-netflix-hystrix-dashboard</artifactId>
     </dependency>
 2、application添加注解和servlet注入
+---
     @EnableEurekaClient
     @SpringBootApplication
     @EnableHystrix
