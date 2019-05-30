@@ -1,11 +1,14 @@
 ribbon+rest+hystrix+dashedHystrix
 ===
 1、pom.xml
+---
     <dependency>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
     </dependency>
+    
 2、application添加restTemplate注入
+---
     //注解LoadBalanced对Ribben进行了封装，所以这就叫做ribbon+restTemplate实现负载均衡，详情看地址https://blog.csdn.net/qq_26562641/article/details/53332269
     @Bean
     @LoadBalanced
@@ -22,6 +25,7 @@ ribbon+rest+hystrix+dashedHystrix
         return registrationBean;
     }
 3、调用方式(直接用serviceId访问)
+---
     @Service
     public class HelloService {
         @Autowired
