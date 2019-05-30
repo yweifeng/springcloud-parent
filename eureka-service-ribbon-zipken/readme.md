@@ -19,5 +19,6 @@ Spring Cloud Sleuth 服务链路追踪
         return Sampler.ALWAYS_SAMPLE;
     }
 
-4、url访问接口、并通过浏览器观察链路
+4、url访问接口 、并通过浏览器观察链路
 ---
+    http://localhost:4001/hello?msg=123
