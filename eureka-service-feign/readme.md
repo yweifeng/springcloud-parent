@@ -1,4 +1,4 @@
-feign
+服务消费者feign
 ===
 1、pom.xml(2.x版本以后使用spring-cloud-starter-openfeign)
 ---
