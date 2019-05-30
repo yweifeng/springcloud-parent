@@ -7,8 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yweifeng/springcloud-parent/
+          uri: https://github.com/yweifeng/springcloud-config
+          ## 目录
           search-paths: respo
-          default-label: master
+          # 开源无需用户名密码
           username:
           password:
+      label: master
