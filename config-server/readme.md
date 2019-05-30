@@ -32,3 +32,37 @@ config-server(配置中心服务)
 ---
     1、http://localhost:2222/user-dev.properties
     2、http://localhost:2222/user/dev
+    
+    
+改造为高可用分布式配置中心
+===
+
+1、pom.xml
+---
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+2、bootstrap.yml 添加注册中心地址
+---
+    server:
+      port: 3333
+    spring:
+      application:
+        name: config-client
+      cloud:
+        config:
+          label: master
+          profile: dev
+          #      uri: http://localhost:2222/
+          discovery:
+            enabled: true
+            service-id: config-server
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8888/eureka/
+    
+3、application.java 添加注解 @EnableEurekaClient
+---

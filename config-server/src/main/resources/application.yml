@@ -14,3 +14,7 @@ spring:
           username:
           password:
       label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

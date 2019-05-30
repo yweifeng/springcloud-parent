@@ -26,3 +26,24 @@ config-client 读取配置信息
 ---
     @Value("${foo}")
     private String foo;
+    
+    
+改造为高可用分布式配置中心
+===
+
+1、pom.xml
+---
+    <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+    </dependency>
+
+2、application.yml 添加注册中心地址
+---
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://localhost:8888/eureka/
+    
+3、application.java 添加注解 @EnableEurekaClient
+---
