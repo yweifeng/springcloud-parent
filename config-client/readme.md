@@ -48,7 +48,7 @@ config-client 读取配置信息
 3、application.java 添加注解 @EnableEurekaClient
 ---
 
-集成消息总线(先装rabbitmq)
+消息总线刷新消息(先装rabbitmq)
 ===
 
 1、pom.xml
