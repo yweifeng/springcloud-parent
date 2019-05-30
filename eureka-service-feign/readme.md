@@ -1,6 +1,6 @@
 feign
 ===
-1、pom.xml(2.spring-cloud-starter-openfeign)
+1、pom.xml(2.x版本以后使用spring-cloud-starter-openfeign)
 ---
     <dependency>
         <groupId>org.springframework.cloud</groupId>
