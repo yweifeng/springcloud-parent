@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/yweifeng/springcloud-parent/config-server/
+          uri: https://github.com/yweifeng/springcloud-parent/tree/master/config-server/
           search-paths: respo
           default-label: master
           username:
