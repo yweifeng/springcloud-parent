@@ -1,4 +1,4 @@
-服务消费方rebbion+rest
+服务消费方ribbon+rest
 ===
 1、pom.xml
 ---
