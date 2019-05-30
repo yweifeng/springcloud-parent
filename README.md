@@ -5,12 +5,12 @@
 		1、***application中配置 @SpringBootApplication 默认扫描当前包和子包
 		2、不同点：@EnableEurekaClient只适用于Eureka作为注册中心，@EnableDiscoveryClient 可以是其他注册中心
 		3、负载均衡: @LoadBalanced 
-			注解LoadBalanced对Ribben进行了封装，所以这就叫做ribbon+restTemplate实现负载均衡，详情看地址https://blog.csdn.net/qq_26562641/article/details/53332269
-			@Bean
-			@LoadBalanced
-			RestTemplate restTemplate() {
-				return new RestTemplate();
-			}
+		注解LoadBalanced对Ribben进行了封装，所以这就叫做ribbon+restTemplate实现负载均衡，详情看地址https://blog.csdn.net/qq_26562641/article/details/53332269
+		@Bean
+		@LoadBalanced
+		RestTemplate restTemplate() {
+			return new RestTemplate();
+		}
 
 	1、Controller注解必须使用@RestController才能访问到。
 	2、pom.xml scrope:
