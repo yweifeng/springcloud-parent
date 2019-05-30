@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: s1
+    name: service-ribbon
 eureka:
   client:
     service-url:
