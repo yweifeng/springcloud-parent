@@ -1,4 +1,4 @@
-ribbon+rest+hystrix+dashedHystrix
+服务消费方rebbion+rest
 ===
 1、pom.xml
 ---
