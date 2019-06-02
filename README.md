@@ -4,6 +4,7 @@
 ```
     ├── config-server               --配置信息中心
     ├── config-client               --配置中心客户端 读取配置
+    ├── consul-server               --consul注册中心
     ├── eureka-server               --eureka注册中心
     ├── eureka-client               --eureka服务提供方
     ├── eureka-service-feign        --eureka服务消费方 regin方式

@@ -19,6 +19,7 @@
         <module>config-client</module>
         <module>eureka-service-ribbon-zipken</module>
         <module>eureka-service-ribbon-zipken-1</module>
+        <module>consul-client</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
